@@ -48,50 +48,73 @@ UrbanSentix is a Big Data-powered sentiment analysis project focused on understa
 
 ## 📁 Folder Structure
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanSentix Project</title>
+</head>
+<body>
+    <h2>Project Directory Structure</h2>
+    <pre>
 UrbanSentix/
-│
 ├── data_sources/              # Raw, processed, and external datasets
 │   ├── raw/                   # Unprocessed scraped files
 │   ├── processed/             # Cleaned and structured data
 │   └── external/              # Social media exports, news archives
-│
-├── data_scraping/            # Web scraping scripts using Scrapy
+├── data_scraping/             # Web scraping scripts using Scrapy
 │   └── scrapy_spiders/
 │       ├── complaints_spider.py
 │       ├── news_spider.py
 │       └── twitter_scraper.py
-│
-├── sentiment_analysis/       # NLP-based sentiment analysis
+├── sentiment_analysis/        # NLP-based sentiment analysis
 │   ├── text_cleaning.py
 │   ├── sentiment_spacy.py
 │   └── sentiment_textblob.py
-│
-├── spark_processing/         # PySpark scripts for Big Data processing
+├── spark_processing/          # PySpark scripts for Big Data processing
 │   ├── spark_job.py
 │   └── config/
 │       └── spark_config.json
-│
-├── database/                 # SQL setup and DB utilities
+├── database/                  # SQL setup and DB utilities
 │   ├── duckdb_init.sql
 │   ├── postgresql_schema.sql
 │   └── db_utils.py
-│
-├── dashboards/               # Visual dashboards
-│   ├── powerbi/              # Power BI dashboards (.pbix or screenshots)
-│   └── superset/             # Superset configs or exports
-│
-├── api/                      # FastAPI service
+├── dashboards/                # Visual dashboards
+│   ├── powerbi/               # Power BI dashboards (.pbix or screenshots)
+│   └── superset/              # Superset configs or exports
+├── api/                       # FastAPI service
 │   ├── main.py
 │   ├── routes/
 │   └── models/
-│
-├── notebooks/                # Jupyter notebooks for EDA or prototyping
+├── notebooks/                 # Jupyter notebooks for EDA or prototyping
 │   └── exploratory_analysis.ipynb
-│
-├── utils/                    # Helper functions and logging
+├── utils/                     # Helper functions and logging
 │   ├── helpers.py
 │   └── logger.py
-│
-├── requirements.txt          # Python dependencies
-├── LICENSE                   # License file (MIT, Apache, etc.)
-└── README.md                 # You're here!
+├── requirements.txt           # Python dependencies
+├── LICENSE                    # License file (MIT, Apache, etc.)
+└── README.md                  # You're here! :)
+    </pre>
+
+    <h2>Project Overview</h2>
+    <p>The UrbanSentix project leverages data collected through web scraping, Big Data processing, and sentiment analysis to monitor and evaluate city services. The project utilizes PySpark for processing, Scrapy for scraping, and FastAPI for serving the results via a web API. Interactive dashboards are built using Power BI and Apache Superset for visualization.</p>
+
+    <h2>Installation & Setup</h2>
+    <p>To get started with the project:</p>
+    <ol>
+        <li>Clone the repository:</li>
+        <pre>git clone https://github.com/yourusername/UrbanSentix.git</pre>
+        <li>Install dependencies:</li>
+        <pre>pip install -r requirements.txt</pre>
+        <li>Configure Spark and database settings in the respective config files.</li>
+        <li>Run the scraping scripts to collect raw data from various sources.</li>
+        <li>Process the data using the PySpark jobs and analyze sentiment using NLP tools.</li>
+        <li>Deploy the FastAPI service to serve the results via an API.</li>
+        <li>Generate interactive visual dashboards using Power BI and Apache Superset.</li>
+    </ol>
+
+    <h2>License</h2>
+    <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+</body>
+</html>
