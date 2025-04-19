@@ -53,7 +53,7 @@ UrbanSentix is a Big Data-powered sentiment analysis project focused on understa
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrbanSentix Project</title>
+   
 </head>
 <body>
     <h2>Project Directory Structure</h2>
