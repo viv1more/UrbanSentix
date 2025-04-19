@@ -49,48 +49,49 @@ UrbanSentix is a Big Data-powered sentiment analysis project focused on understa
 ## 📁 Folder Structure
 
 UrbanSentix/
-├── README.md                      # Project overview
-├── LICENSE                        # License file (e.g., MIT)
-├── requirements.txt              # Python dependencies
-
-├── data_sources/                 
-│   ├── raw/                      # Unprocessed scraped data
-│   ├── processed/                # Cleaned/structured data
-│   └── external/                # CSVs/news articles/social media exports
-
-├── data_scraping/
-│   └── scrapy_spiders/          # Scrapy spiders for complaints, news, social
+│
+├── data_sources/              # Raw, processed, and external datasets
+│   ├── raw/                   # Unprocessed scraped files
+│   ├── processed/             # Cleaned and structured data
+│   └── external/              # Social media exports, news archives
+│
+├── data_scraping/            # Web scraping scripts using Scrapy
+│   └── scrapy_spiders/
 │       ├── complaints_spider.py
 │       ├── news_spider.py
 │       └── twitter_scraper.py
-
-├── sentiment_analysis/
-│   ├── text_cleaning.py         # Preprocessing scripts
-│   ├── sentiment_spacy.py       # spaCy sentiment pipeline
-│   └── sentiment_textblob.py    # TextBlob-based fallback
-
-├── spark_processing/
-│   ├── spark_job.py             # PySpark transformation scripts
-│   └── config/                  # Spark session config and schema defs
-
-├── database/
-│   ├── duckdb_init.sql          # DuckDB table setup
-│   ├── postgresql_schema.sql    # PostgreSQL schema setup
-│   └── db_utils.py              # DB insert/query helpers
-
-├── dashboards/
-│   ├── powerbi/                 # PBIX files or export images
-│   └── superset/                # Superset dashboard JSONs and configs
-
-├── api/
-│   └── app/                     
-│       ├── main.py              # FastAPI entry point
-│       ├── routes/             # API endpoints
-│       └── models/             # Pydantic models and DB models
-
-├── notebooks/                   # Jupyter notebooks for EDA & prototyping
+│
+├── sentiment_analysis/       # NLP-based sentiment analysis
+│   ├── text_cleaning.py
+│   ├── sentiment_spacy.py
+│   └── sentiment_textblob.py
+│
+├── spark_processing/         # PySpark scripts for Big Data processing
+│   ├── spark_job.py
+│   └── config/
+│       └── spark_config.json
+│
+├── database/                 # SQL setup and DB utilities
+│   ├── duckdb_init.sql
+│   ├── postgresql_schema.sql
+│   └── db_utils.py
+│
+├── dashboards/               # Visual dashboards
+│   ├── powerbi/              # Power BI dashboards (.pbix or screenshots)
+│   └── superset/             # Superset configs or exports
+│
+├── api/                      # FastAPI service
+│   ├── main.py
+│   ├── routes/
+│   └── models/
+│
+├── notebooks/                # Jupyter notebooks for EDA or prototyping
 │   └── exploratory_analysis.ipynb
-
-└── utils/
-    ├── helpers.py               # Shared utility functions
-    └── logger.py                # Logging setup
+│
+├── utils/                    # Helper functions and logging
+│   ├── helpers.py
+│   └── logger.py
+│
+├── requirements.txt          # Python dependencies
+├── LICENSE                   # License file (MIT, Apache, etc.)
+└── README.md                 # You're here!
