@@ -96,25 +96,5 @@ UrbanSentix/
 ├── LICENSE                    # License file (MIT, Apache, etc.)
 └── README.md                  # You're here! :)
     </pre>
-
-    <h2>Project Overview</h2>
-    <p>The UrbanSentix project leverages data collected through web scraping, Big Data processing, and sentiment analysis to monitor and evaluate city services. The project utilizes PySpark for processing, Scrapy for scraping, and FastAPI for serving the results via a web API. Interactive dashboards are built using Power BI and Apache Superset for visualization.</p>
-
-    <h2>Installation & Setup</h2>
-    <p>To get started with the project:</p>
-    <ol>
-        <li>Clone the repository:</li>
-        <pre>git clone https://github.com/yourusername/UrbanSentix.git</pre>
-        <li>Install dependencies:</li>
-        <pre>pip install -r requirements.txt</pre>
-        <li>Configure Spark and database settings in the respective config files.</li>
-        <li>Run the scraping scripts to collect raw data from various sources.</li>
-        <li>Process the data using the PySpark jobs and analyze sentiment using NLP tools.</li>
-        <li>Deploy the FastAPI service to serve the results via an API.</li>
-        <li>Generate interactive visual dashboards using Power BI and Apache Superset.</li>
-    </ol>
-
-    <h2>License</h2>
-    <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
 </body>
 </html>
